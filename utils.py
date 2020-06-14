@@ -113,7 +113,7 @@ class generate_embedding():
             right_window = token_feature[k+1:k+window_size+1,:]
             window_matrix = np.vstack([left_window, right_window, token_feature[k,:][None,:]])
             
-            Q, R = np.linalg.qr(window_matrix.T) # This gives negative weights
+            _, R = np.linalg.qr(window_matrix.T) # This gives negative weights
 
             r = R[:, -1]
             alpha_alignment[k] = np.mean(normalize(R[:-1,:-1],axis=0),axis=1).dot(R[:-1,-1]) / (np.linalg.norm(r[:-1]))
