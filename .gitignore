@@ -1,50 +1,135 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-*.zip
-SentEval/data/downstream/STS/STS15-en-test/STS.input.answers-forums.LICENSE
-SentEval/data/downstream/COCO/test.pkl
-SentEval/data/downstream/COCO/train.pkl
-SentEval/data/downstream/COCO/valid.pkl
-SentEval/data/downstream/CR/custrev.neg
-SentEval/data/downstream/CR/custrev.pos
-SentEval/data/downstream/MPQA/mpqa.neg
-SentEval/data/downstream/MPQA/mpqa.pos
-SentEval/data/downstream/MR/rt-polarity.neg
-SentEval/data/downstream/MR/rt-polarity.pos
-SentEval/data/downstream/SNLI/labels.dev
-SentEval/data/downstream/SNLI/labels.test
-SentEval/data/downstream/SNLI/labels.train
-SentEval/data/downstream/SNLI/s1.dev
-SentEval/data/downstream/SNLI/s1.test
-SentEval/data/downstream/SNLI/s1.train
-SentEval/data/downstream/SNLI/s2.dev
-SentEval/data/downstream/SNLI/s2.test
-SentEval/data/downstream/SNLI/s2.train
-SentEval/data/downstream/SST/binary/sentiment-dev
-SentEval/data/downstream/SST/binary/sentiment-test
-SentEval/data/downstream/SST/binary/sentiment-train
-SentEval/data/downstream/SST/fine/sentiment-dev
-SentEval/data/downstream/SST/fine/sentiment-test
-SentEval/data/downstream/SST/fine/sentiment-train
-SentEval/data/downstream/STS/STS13-en-test/correct-output.pl
-SentEval/data/downstream/STS/STS13-en-test/correlation-all.pl
-SentEval/data/downstream/STS/STS13-en-test/correlation.pl
-SentEval/data/downstream/STS/STS14-en-test/correlation-noconfidence.pl
-SentEval/data/downstream/STS/STS14-en-test/sts2012-test.tgz
-SentEval/data/downstream/STS/STS14-en-test/sts2012-train.tgz
-SentEval/data/downstream/STS/STS14-en-test/sts2013-test.tgz
-SentEval/data/downstream/STS/STS15-en-test/corebaseline-tokencos.tar.gz
-SentEval/data/downstream/STS/STS15-en-test/correlation-noconfidence.pl
-SentEval/data/downstream/STS/STS16-en-test/correlation-noconfidence.pl
-SentEval/data/downstream/STS/STS16-en-test/STS2016.input.answer-answer.ascii
-SentEval/data/downstream/STS/STS16-en-test/STS2016.input.headlines.ascii
-SentEval/data/downstream/STS/STS16-en-test/STS2016.input.plagiarism.ascii
-SentEval/data/downstream/STS/STS16-en-test/STS2016.input.postediting.ascii
-SentEval/data/downstream/STS/STS16-en-test/STS2016.input.question-question.ascii
-SentEval/data/downstream/STS/STSBenchmark/correlation.pl
-SentEval/data/downstream/STS/STSBenchmark/sts-dev.csv
-SentEval/data/downstream/STS/STSBenchmark/sts-test.csv
-SentEval/data/downstream/STS/STSBenchmark/sts-train.csv
-SentEval/data/downstream/SUBJ/subj.objective
-SentEval/data/downstream/SUBJ/subj.subjective
-SentEval/data/downstream/TREC/train_5500.label
-SentEval/data/downstream/TREC/TREC_10.label
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# vscode
+.vscode/
+
+# MacOS stuff:
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must end with two \r
+Icon
+# Thumbnails
+._*
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Added by us: don't track SentEval or HuggingFace cache
+SentEval
+cache
